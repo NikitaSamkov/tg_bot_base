@@ -8,7 +8,7 @@ from ..settings import get_settings
 
 
 ADMIN_ID = get_settings().get('SECURITY', 'ADMIN_ID')
-WHITELIST_PATH = os.path.join('..', 'settings', 'whitelist.txt')
+WHITELIST_PATH = os.path.join(os.path.dirname(__file__), 'whitelist.txt')
 
 
 def is_admin(user_id: int) -> bool:

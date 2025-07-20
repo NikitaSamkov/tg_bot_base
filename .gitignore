@@ -10,4 +10,7 @@ __pycache__/
 settings/settings.ini
 
 # Белый список
-settings/whitelist.txt
+settings/security/whitelist.txt
+
+# Логи
+logs/data
