@@ -14,6 +14,8 @@ def log_msg(msg: str):
     """Сохраняет сообщение в логи"""
     cur_time = datetime.now()
     filename = cur_time.strftime('%d-%m-%Y') + f'.{LOG_EXT}'
+    if not os.path.exists(DATA_DIR):
+        os.mkdir(DATA_DIR)
     if not os.path.exists(os.path.join(DATA_DIR, filename)):
         with open(os.path.join(DATA_DIR, filename), 'a', encoding='utf-8'):
             pass

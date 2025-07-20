@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = "Самков Н.А. https://github.com/NikitaSamkov"
 __maintainer__ = "Самков Н.А. https://github.com/NikitaSamkov"
-__doc__ = "Основной модель для запуска бота"
+__doc__ = "Основной модуль для запуска бота"
 
 from telegram.ext import Application, CommandHandler
 from settings import get_settings
