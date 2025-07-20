@@ -45,7 +45,6 @@ def whitelist_only(func):
 
 
 @command_common
-@whitelist_only
 async def start_comm(update: Update, context: CallbackContext) -> None:
     """Команда start"""
     await update.message.reply_text("""
